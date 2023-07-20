@@ -1,0 +1,26 @@
+<h2 class="page-header">Search Singer</h2>
+<form action="/singers" method="GET">
+  <div class="form-row">
+    <div class="form-item">
+      <label>Name</label>
+      <input type="text" name="name" value="<%= locals.searchOptions.name %>" />
+    </div>
+  </div>
+  <div class="form-row form-row-end">
+    <button class="btn btn-primary" type="submit>">Search</button>
+  </div>
+</form>
+<br />
+<% locals.singers.forEach(singer => { %>
+<div class="author-row">
+  <div class="author-name"><%= singer.name%></div>
+  <div class="btn-row">
+    <a class="btn btn-primary" href="/singers/<%= singer.id%>">View</a>
+    <a class="btn btn-primary" href="/singers/<%= singer.id%>/edit">Edit</a>
+    <%- include('../partials/deleteForm', {url: `/singers/${singer.id}`}) %>
+  </div>
+</div>
+<% })%>
+<br>
+<center><a class="btn btn-primary" href="/index">Back</a></center>
+  

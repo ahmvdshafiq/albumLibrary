@@ -1,0 +1,14 @@
+<h2 class="page-header"><%= locals.singer.name%></h2>
+<div class="btn-row">
+  <a class="btn btn-primary" href="/singers/<%= locals.singer.id%>/edit">Edit</a>
+  <%- include('../partials/deleteForm', {url: `/singers/${singer.id}`})%>
+  <a class="btn btn-primary" href="/index">Back</a>
+</div>
+<% if
+(locals.albumsBySinger.length> 0){%>
+<h2 class="page-header">Albums by Singer</h2>
+<%- include('../partials/bookGrid2', { albums: albumsBySinger})%>
+<div class="btn-row">
+  <a class="btn btn-primary" href="/index">Back</a>
+</div>
+<% } %>

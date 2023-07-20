@@ -1,0 +1,123 @@
+@import 'shared/variables.css';
+@import 'shared/header.css';
+@import 'shared/buttons.css';
+@import 'shared/form.css';
+@import 'shared/author.css';
+@import 'shared/book.css';
+
+:root {
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+}
+
+h2 {
+  color: white;
+  font-family: Copperplate, Papyrus, fantasy;
+}
+
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("bgg.jpg");
+  background-repeat:no-repeat;
+  background-size: cover;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  margin-bottom: 3rem;
+}
+
+.inner-container {
+  margin: 0 2rem;
+
+}
+.header-nav {
+  background-color: brown;
+  border-radius: 20px;
+  width: 1500px;
+  float: left;
+  padding-left: 10px;
+}
+
+.header-nav h2{
+  margin-left: 10px;
+}
+
+.author-name
+{
+  color: white;
+}
+
+.book-details-label
+{
+  color: white;
+}
+
+.book-details-grid{
+  background-color: rgb(110, 36, 36);
+  margin-left: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 10px;
+  border-radius: 10px;
+}
+
+.book-cover{
+  border-radius: 10px;
+  height: 330px;
+  width: 330px;
+}
+
+.author-row{
+  background-color: rgb(110, 36, 36);
+  padding: 5px;
+  border-radius: 10px;
+}
+
+
+
+.book-grid{
+ 
+                padding-top:30px;
+                grid-column-gap: 50px;
+                background-color: #725a4e;
+                width: 1120px;
+                height: 1010px;
+                border-radius: 10px;
+                overflow-x: hidden;
+                overflow-y: auto;
+                text-align:justify;
+}
+.book-grid1{
+ 
+                padding-top:30px;
+                padding-left: 40px;
+                padding-right: 40px;
+                grid-template-columns: auto auto auto;
+                background-color: #725a4e;
+                width: 1100px;
+                height: 1010px;
+                border-radius: 10px;
+                overflow-x: hidden;
+                overflow-y: auto;
+                text-align:justify;
+}
+
+.form-item{
+  color: white;
+}
+
+.page-header {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.error-message{
+  color: hsl(var(--color-danger-hue), 100%, 50%);
+}

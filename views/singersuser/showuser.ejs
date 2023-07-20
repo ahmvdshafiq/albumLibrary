@@ -1,0 +1,7 @@
+<h2 class="page-header"><%= locals.singer.name%></h2>
+
+<% if
+(locals.albumsBySinger.length> 0){%>
+<h2 class="page-header">Album by Singer</h2>
+<%- include('../partials/bookGrid3', { albums: albumsBySinger})%>
+<% } %>

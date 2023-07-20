@@ -1,0 +1,7 @@
+<h2 class="page-header"><%= locals.author.name%></h2>
+
+<% if
+(locals.booksByAuthor.length> 0){%>
+<h2 class="page-header">Books by Author</h2>
+<%- include('../partials/bookGrid', { books: booksByAuthor})%>
+<% } %>

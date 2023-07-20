@@ -1,0 +1,27 @@
+
+<h2 class="page-header"><%= locals.album.title%></h2>
+<div class="book-details">
+  <div>
+    <img class="book-cover" width="100" height="150" src="<%=locals.album.coverImagePath%>" />
+    <div class="book-details-btn-grid">
+      <a class="btn btn-primary" href="/albums/<%= locals.album.id%>/edit">Edit</a>
+      <%- include('../partials/deleteForm', {url:`/albums/${locals.album.id}`})%>
+      <a class="btn btn-primary book-details-author-button" href="/singers/<%= locals.album.singer.id%>">View Author</a>
+      <a class="btn btn-primary" href="/index">Back</a>
+    </div>
+  <br>
+  <br>
+  </div>
+  <div class="book-details-grid">
+    <div class="book-details-label">Singer:</div>
+    <div class="book-details-label"><%= locals.album.singer.name%></div>
+    <div class="book-details-label">Publish Date:</div>
+    <div class="book-details-label"><%= locals.album.publishDate.toDateString()%></div>
+    <div class="book-details-label">Track:</div>
+    <div class="book-details-label"><%= locals.album.track%></div>
+    <div class="book-details-label">Description:</div>
+    <div class="book-details-label"><%= locals.album.description%></div>
+  </div>
+  
+  
+</div>

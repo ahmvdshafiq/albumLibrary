@@ -1,0 +1,41 @@
+[{
+  "_id": {
+    "$oid": "64b561c165b90e8af4b790d6"
+  },
+  "username": "jamal",
+  "email": "jamal@yahoo.my",
+  "password": "jamal123",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64b561e565b90e8af4b790d7"
+  },
+  "username": "nama",
+  "email": "nama@yahoo.my",
+  "password": "nama123",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64b566257823686bd42f1e45"
+  },
+  "username": "namu",
+  "email": "namu@yahoo.my",
+  "password": "namu123",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64b567b00471f150901cc78d"
+  },
+  "username": "admin",
+  "email": "admin@gmail.com",
+  "password": "admin123",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64b709198b88abeb60f59a80"
+  },
+  "username": "sulaiman",
+  "email": "sulaiman@yahoo.my",
+  "password": "man123",
+  "__v": 0
+}]

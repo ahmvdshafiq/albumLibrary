@@ -1,0 +1,78 @@
+<!DOCTYPE html>   
+<html>   
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<title> Login Page </title>  
+<style>   
+    Body {  
+        font-family: Calibri, Helvetica, sans-serif;  
+        background-color: pink; 
+        margin-top: 50px; 
+      }  
+      button {   
+             background-color: #725a4e;   
+             width: 100%;  
+              color: cornsilk;   
+              padding: 15px;   
+              margin: 10px 0px;   
+              border: none;   
+              cursor: pointer;   
+               }   
+       form {   
+              border: 3px solid #f1f1f1;   
+          }   
+       input[type=text], input[type=password], input[type=email] {   
+              width: 100%;   
+              margin: 8px 0;  
+              padding: 12px 20px;   
+              display: inline-block;   
+              border: 2px solid green;   
+              box-sizing: border-box;   
+          }  
+       button:hover {   
+              opacity: 0.7;   
+          }   
+        .cancelbtn {   
+              width: auto;   
+              padding: 10px 18px;  
+              margin: 10px 5px;  
+          }   
+      
+          h1{
+              color: #f1f1f1;
+              font-family: Copperplate, Papyrus, fantasy;
+          }
+              
+           
+       .container {   
+              padding: 25px;   
+              background-color: rgb(110, 36, 36);
+              border-radius: 20px;  
+          }
+          label{
+              color: aliceblue;
+          }   
+      
+      .link{
+          color: white;
+      } 
+</style>   
+</head>    
+<body>    
+    <center> <h1> Sign Up </h1> </center>   
+    <form action="/register" method="POSt">   
+        <div class="container"> 
+            <label>Username : </label>    
+            <input type="text" placeholder="Enter Username" name="username" required>
+            <label>Email : </label>    
+            <input type="email" placeholder="Enter Email" name="email" required>  
+            <label>Password : </label>   
+            <input type="password" placeholder="Enter Password" name="password" required>  
+            <button type="submit">Register</button>
+            <br>  
+            <button type="button" class="cancelbtn"> Cancel</button>   
+            Already have an account?<a class="link"   href="/login"> login </a>   
+        </div>   
+    </form>     
+</body>     
+</html>  
